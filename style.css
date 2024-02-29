@@ -1,0 +1,65 @@
+.alkaliMetal {
+  background: indianred;
+  border: solid 1px;
+}
+.alkalineEarth {
+  background: orange;
+  border: solid 1px;
+}
+.transitionMetal {
+  background: gold;
+  border: solid 1px black;
+}
+.basicMetal {
+  background: mediumseagreen;
+  border: solid 1px;
+}
+.metalloid {
+  background: skyblue;
+  border: solid 1px;
+}
+.nonmetal {
+  background: cornflowerblue;
+  border: solid 1px black;
+}
+.halogen {
+  background: rgb(129, 117, 207);
+  border: solid 1px black;
+}
+.nobleGas {
+  background: brown;
+  border: solid 1px black;
+}
+.lanthanide {
+  background: lightpink;
+  border: solid 1px;
+}
+.actinide {
+  background: palevioletred;
+  border: solid 1px;
+}
+
+/*  */
+.liquid {
+  color: rgb(3, 174, 174);
+  font-size: large;
+}
+.gas {
+  color: aliceblue;
+  font-size: large;
+}
+
+/*  */
+.atomicNumber {
+  display: inline;
+  float: left;
+  /* margin-top: 0; */
+}
+h6 {
+  float: right;
+  margin: auto;
+}
+h3 {
+  margin-bottom: 10px;
+  font-size: 20pt;
+}

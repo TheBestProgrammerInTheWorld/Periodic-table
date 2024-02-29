@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        .periodicTable, td{
+            margin: auto;
+            width: 1400px;
+            height: 50px;
+
+            text-transform: capitalize;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+
+            transition-duration: 0.2s;
+        }
+        td:hover{
+            transform: scale(130%);
+            cursor: pointer;
+        }
+
+        .periodicTypes{
+            text-align: center;
+            margin: auto;
+        }
+        .periodicTypes th{
+            width: 4vw;
+            text-transform: capitalize;
+        }
+
+
+        .ex{
+            display: inline-block;
+            margin-left: 200px;
+        }
+        #java{
+            /* display: inline-block; */
+            /* float: left; */
+            float: right;
+            margin-right: 200px;
+            width: 1200px;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+        }
+        .javaprac{
+            margin-top: 40px;
+        }
+        .example{
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+        .atomicNumberEx{
+            display: inline;
+            /* margin-left: 0; */
+        }
+        .SLG{
+            margin: auto;
+            text-align: center;
+
+            font-size: 24pt;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Periodic Table</h1>
+    </header>
+
+    
+
+
+    <table class="periodicTable">
+        <tr>
+            <td></td>
+            <th>1</th>
+            <td colspan="17"></td>
+            <th>18</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td class="nonmetal gas" onclick="getElementById('java').innerHTML = 'Hydrogen is the chemical element with the symbol H and atomic number 1. Hydrogen is the lightest element. At standard conditions hydrogen is a gas of diatomic molecules having the formula H2. It is colorless, odorless, tasteless, non-toxic, and highly combustible. Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all normal matter. Stars such as the Sun are mainly composed of hydrogen in the plasma state. Most of the hydrogen on Earth exists in molecular forms such as water and organic compounds. For the most common isotope of hydrogen (symbol 1H) each atom has one proton, one electron, and no neutrons.'"> 
+                <span class="atomicNumber">1</span> 
+                <h6>1.008</h6> 
+                <h3>h</h3>hydrogen</td>
+
+            <th>2</th>
+            <td colspan="11"></td>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Helium is a chemical element with the symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas group in the periodic table. Its boiling and melting point are the lowest among all the elements. Helium is the second lightest and second most abundant element in the observable universe. It is present at about 24% of the total elemental mass, which is more than 12 times the mass of all the heavier elements combined. Its abundance is similar to this in both the Sun and in Jupiter. This is due to the very high nuclear binding energy of helium-4, with respect to the next three elements after helium. This helium-4 binding energy also accounts for why it is a product of both nuclear fusion and radioactive decay. Most helium in the universe is helium-4, the vast majority of which was formed during the Big Bang. Large amounts of new helium are being created by nuclear fusion of hydrogen in stars.'"> 
+                <span class="atomicNumber">2</span> 
+                <h6>4.003</h6> 
+                <h3>he</h3>helium</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Lithium is a chemical element with the symbol Li and atomic number 3. It is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element. Like all alkali metals, lithium is highly reactive and flammable, and must be stored in vacuum, inert atmosphere or inert liquid such as purified kerosene or mineral oil. When cut, it exhibits a metallic luster, but moist air corrodes it quickly to a dull silvery gray, then black tarnish. It never occurs freely in nature, but only in compounds, such as pegmatitic minerals, which were once the main source of lithium. Due to its solubility as an ion, it is present in ocean water and is commonly obtained from brines. Lithium metal is isolated electrolytically from a mixture of lithium chloride and potassium chloride.'">
+                <span class="atomicNumber">3</span>
+                <h6>6.941</h6>
+                <h3>li</h3>lithium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Beryllium is a chemical element with the symbol Be and atomic number 4. It is a steel-gray, strong, lightweight and brittle alkaline earth metal. It is a divalent element that occurs naturally only in combination with other elements to form minerals. Notable gemstones high in beryllium include beryl and chrysoberyl. It is a relatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars, beryllium is depleted as it is fused into heavier elements. Beryllium constitutes about 0.0004 percent by mass of Earths crust. The worlds annual beryllium production of 220 tons is usually manufactured by extraction from the mineral beryl, a difficult process because beryllium bonds strongly to oxygen.'">
+                <span class="atomicNumber">4</span>
+                <h6>9.012</h6>
+                <h3>be</h3>beryllium</td>
+
+            <td colspan="11"></td>
+
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystal boron carbide.Boron is synthesized entirely by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, so it is a low-abundance element in the Solar System and in the Earths crust. It constitutes about 0.001 percent by weight of Earths crust. It is concentrated on Earth by the water-solubility of its more common naturally occurring compounds, the borate minerals. These are mined industrially as evaporites, such as borax and kernite. The largest known deposits are in Turkey, the largest producer of boron minerals.'">
+                <span class="atomicNumber">5</span>
+                <h6>10.811</h6>
+                <h3>b</h3>boron</td>
+            <td class="nonmetal" onclick="getElementById('java').innerHTML = 'Carbon is a chemical element with the symbol C and atomic number 6. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds. It belongs to group 14 of the periodic table. Carbon makes up only about 0.025 percent of Earths crust. Three isotopes occur naturally, 12C and 13C being stable, while 14C is a radionuclide, decaying with a half-life of about 5,730 years. Carbon is one of the few elements known since antiquity.Carbon is the 15th most abundant element in the Earths crust, and the fourth most abundant element in the universe by mass after hydrogen, helium, and oxygen. Carbons abundance, its unique diversity of organic compounds, and its unusual ability to form polymers at the temperatures commonly encountered on Earth enables this element to serve as a common element of all known life. It is the second most abundant element in the human body by mass after oxygen.'">
+                <span class="atomicNumber">6</span>
+                <h6>12.011</h6>
+                <h3>c</h3>carbon</td>
+            <td class="nonmetal gas" onclick="getElementById('java').innerHTML = 'Nitrogen is the chemical element with the symbol N and atomic number 7. It was first discovered and isolated by Scottish physician Daniel Rutherford in 1772. Although Carl Wilhelm Scheele and Henry Cavendish had independently done so at about the same time, Rutherford is generally accorded the credit because his work was published first. The name nitrogène was suggested by French chemist Jean-Antoine-Claude Chaptal in 1790 when it was found that nitrogen was present in nitric acid and nitrates. Antoine Lavoisier suggested instead the name azote, from the Ancient Greek: ἀζωτικός no life, as it is an asphyxiant gas; this name is used in several languages, including French, Italian, Russian, Romanian, Portuguese and Turkish, and appears in the English names of some nitrogen compounds such as hydrazine, azides and azo compounds.'">
+                <span class="atomicNumber">7</span>
+                <h6>14.007</h6>
+                <h3>n</h3>nitrogen</td>
+            <td class="nonmetal gas" onclick="getElementById('java').innerHTML = 'Oxygen is the chemical element with the symbol O and atomic number 8. It is a member of the chalcogen group in the periodic table, a highly reactive nonmetal, and an oxidizing agent that readily forms oxides with most elements as well as with other compounds. Oxygen is Earths most abundant element, and after hydrogen and helium, it is the third-most abundant element in the universe. At standard temperature and pressure, two atoms of the element bind to form dioxygen, a colorless and odorless diatomic gas with the formula O2 Diatomic oxygen gas currently constitutes 20.95% of the Earths atmosphere, though this has changed considerably over long periods of time. Oxygen makes up almost half of the Earths crust in the form of oxides.'">
+                <span class="atomicNumber">8</span>
+                <h6>15.999</h6>
+                <h3>o</h3>oxygen</td>
+            <td class="halogen gas" onclick="getElementById('java').innerHTML = 'Fluorine is a chemical element with the symbol F and atomic number 9. It is the lightest halogen and exists at standard conditions as a highly toxic, pale yellow diatomic gas. As the most electronegative element, it is extremely reactive, as it reacts with all other elements, except for argon, neon, and helium. Among the elements, fluorine ranks 24th in universal abundance and 13th in terrestrial abundance. Fluorite, the primary mineral source of fluorine which gave the element its name, was first described in 1529; as it was added to metal ores to lower their melting points for smelting, the Latin verb fluo meaning flow gave the mineral its name. Proposed as an element in 1810, fluorine proved difficult and dangerous to separate from its compounds, and several early experimenters died or sustained injuries from their attempts. Only in 1886 did French chemist Henri Moissan isolate elemental fluorine using low-temperature electrolysis, a process still employed for modern production. Industrial production of fluorine gas for uranium enrichment, its largest application, began during the Manhattan Project in World War II.'">
+                <span class="atomicNumber">9</span>
+                <h6>18.998</h6>
+                <h3>f</h3>fluorine</td>
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Neon is a chemical element with the symbol Ne and atomic number 10. It is a noble gas. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air. It was discovered in 1898 as one of the three residual rare inert elements remaining in dry air, after nitrogen, oxygen, argon and carbon dioxide were removed. Neon was the second of these three rare gases to be discovered and was immediately recognized as a new element from its bright red emission spectrum. The name neon is derived from the Greek word, νέον, neuter singular form of νέος (neos), meaning new. Neon is chemically inert, and no uncharged neon compounds are known. The compounds of neon currently known include ionic molecules, molecules held together by van der Waals forces and clathrates.'">
+                <span class="atomicNumber">10</span>
+                <h6>20.180</h6>
+                <h3>ne</h3>neon</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Sodium is a chemical element with the symbol Na and atomic number 11. It is a soft, silvery-white, highly reactive metal. Sodium is an alkali metal, being in group 1 of the periodic table. Its only stable isotope is 23Na. The free metal does not occur in nature, and must be prepared from compounds. Sodium is the sixth most abundant element in the Earths crust and exists in numerous minerals such as feldspars, sodalite, and rock salt. Many salts of sodium are highly water-soluble: sodium ions have been leached by the action of water from the Earths minerals over eons, and thus sodium and chlorine are the most common dissolved elements by weight in the oceans.'">
+                <span class="atomicNumber">11</span>
+                <h6>22.990</h6>
+                <h3>na</h3>sodium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Magnesium is a chemical element with the symbol Mg and atomic number 12. It is a shiny gray solid which bears a close physical resemblance to the other five elements in the second column of the periodic table: all group 2 elements have the same electron configuration in the outer electron shell and a similar crystal structure. This element is produced in large, aging stars from the sequential addition of three helium nuclei to a carbon nucleus. When such stars explode as supernovas, much of the magnesium is expelled into the interstellar medium where it may recycle into new star systems. Magnesium is the eighth most abundant element in the Earths crust and the fourth most common element in the Earth, making up 13% of the planets mass and a large fraction of the planets mantle. It is the third most abundant element dissolved in seawater, after sodium and chlorine.'">
+                <span class="atomicNumber">12</span>
+                <h6>24.305</h6>
+                <h3>mg</h3>magnesium</td>
+
+            <!-- <td colspan="11"></td> -->
+            <th>3</th>
+            <td></td>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Aluminium is a chemical element with the symbol Al and atomic number 13. Aluminium has a density lower than those of other common metals, at approximately one third that of steel. It has a great affinity towards oxygen, and forms a protective layer of oxide on the surface when exposed to air. Aluminium visually resembles silver, both in its color and in its great ability to reflect light. It is soft, non-magnetic and ductile. It has one stable isotope, 27Al; this isotope is very common, making aluminium the twelfth most common element in the Universe. The radioactivity of 26Al is used in radiodating.'">
+                <span class="atomicNumber">13</span>
+                <h6>26.982</h6>
+                <h3>al</h3>aluminium</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Silicon is a chemical element with the symbol Si and atomic number 14. It is a hard, brittle crystalline solid with a blue-grey metallic luster, and is a tetravalent metalloid and semiconductor. It is a member of group 14 in the periodic table: carbon is above it; and germanium, tin, lead, and flerovium are below it. It is relatively unreactive. Because of its high chemical affinity for oxygen, it was not until 1823 that Jöns Jakob Berzelius was first able to prepare it and characterize it in pure form. Its oxides form a family of anions known as silicates. Its melting and boiling points of 1414 °C and 3265 °C, respectively, are the second highest among all the metalloids and nonmetals, being surpassed only by boron. Silicon is the eighth most common element in the universe by mass, but very rarely occurs as the pure element in the Earths crust. It is most widely distributed in space in cosmic dusts, planetoids, and planets as various forms of silicon dioxide or silicates. More than 90% of the Earths crust is composed of silicate minerals, making silicon the second most abundant element in the Earths crust, after oxygen. Silicon is a natural element, and when not previously present has a residence time of about 400 years in the worlds oceans.'">
+                <span class="atomicNumber">14</span>
+                <h6>28.086</h6>
+                <h3>si</h3>silicon</td>
+            <td class="nonmetal" onclick="getElementById('java').innerHTML = 'Phosphorus is a chemical element with the symbol P and atomic number 15. Elemental phosphorus exists in two major forms, white phosphorus and red phosphorus, but because it is highly reactive, phosphorus is never found as a free element on Earth. It has a concentration in the Earths crust of about one gram per kilogram. In minerals, phosphorus generally occurs as phosphate. Elemental phosphorus was first isolated as white phosphorus in 1669. White phosphorus emits a faint glow when exposed to oxygen – hence the name, taken from Greek mythology, Φωσφόρος meaning light-bearer, referring to the Morning Star, the planet Venus. The term phosphorescence, meaning glow after illumination, derives from this property of phosphorus, although the word has since been used for a different physical process that produces a glow. The glow of phosphorus is caused by oxidation of the white phosphorus — a process now called chemiluminescence. Together with nitrogen, arsenic, antimony, and bismuth, phosphorus is classified as a pnictogen.'">
+                <span class="atomicNumber">15</span>
+                <h6>30.974</h6>
+                <h3>p</h3>phosphorus</td>
+            <td class="nonmetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">16</span>
+                <h6>32.066</h6>
+                <h3>s</h3>sulfur</td>
+            <td class="halogen gas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">17</span>
+                <h6>35.453</h6>
+                <h3>ci</h3>chlorine</td>
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">18</span>
+                <h6>39.948</h6>
+                <h3>ar</h3>argon</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">19</span>
+                <h6>39.098</h6>
+                <h3>k</h3>potassium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">20</span>
+                <h6>40.078</h6>
+                <h3>ca</h3>calcium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">21</span>
+                <h6>44.956</h6>
+                <h3>sc</h3>scandium</td>
+            <td></td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">22</span>
+                <h6>47.880</h6>
+                <h3>ti</h3>titanium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">23</span>
+                <h6>50.942</h6>
+                <h3>v</h3>vanadium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">24</span>
+                <h6>51.996</h6>
+                <h3>cr</h3>chromium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">25</span>
+                <h6>54.938</h6>
+                <h3>mn</h3>manganese</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">26</span>
+                <h6>55.845</h6>
+                <h3>fe</h3>iron</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">27</span>
+                <h6>58.933</h6>
+                <h3>co</h3>cobalt</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">28</span>
+                <h6>58.693</h6>
+                <h3>ni</h3>nickle</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">29</span>
+                <h6>63.546</h6>
+                <h3>cu</h3>copper</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">30</span>
+                <h6>65.380</h6>
+                <h3>zn</h3>zinc</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">31</span>
+                <h6>69.723</h6>
+                <h3>ga</h3>gallium</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">32</span>
+                <h6>72.631</h6>
+                <h3>ge</h3>germanium</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">33</span>
+                <h6>74.922</h6>
+                <h3>as</h3>arsenic</td>
+            <td class="nonmetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">34</span>
+                <h6>78.971</h6>
+                <h3>se</h3>selenium</td>
+            <td class="halogen liquid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">35</span>
+                <h6>79.904</h6>
+                <h3>br</h3>bromine</td>
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">36</span>
+                <h6>83.798</h6>
+                <h3>kr</h3>krypton</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">37</span>
+                <h6>85.468</h6>
+                <h3>rb</h3>rubidium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">38</span>
+                <h6>87.620</h6>
+                <h3>sr</h3>strontium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">39</span>
+                <h6>88.906</h6>
+                <h3>y</h3>yttrium</td>
+
+            <td></td>
+
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">40</span>
+                <h6>91.224</h6>
+                <h3>zr</h3>zirconium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">41</span>
+                <h6>92.906</h6>
+                <h3>nb</h3>niobium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">42</span>
+                <h6>95.950</h6>
+                <h3>mo</h3>molybdenum</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">43</span>
+                <h6>98.907</h6>
+                <h3>tc</h3>technetium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">44</span>
+                <h6>101.070</h6>
+                <h3>ru</h3>ruthenium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">45</span>
+                <h6>102.906</h6>
+                <h3>rh</h3>rhodium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">46</span>
+                <h6>106.420</h6>
+                <h3>pd</h3>palladium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">47</span>
+                <h6>107.868</h6>
+                <h3>ag</h3>silver</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">48</span>
+                <h6>112.414</h6>
+                <h3>cd</h3>cadmium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">49</span>
+                <h6>114.818</h6>
+                <h3>in</h3>indium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">50</span>
+                <h6>118.711</h6>
+                <h3>sn</h3>tin</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">51</span>
+                <h6>121.760</h6>
+                <h3>sb</h3>antimony</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">52</span>
+                <h6>127.600</h6>
+                <h3>te</h3>tellurium</td>
+            <td class="halogen" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">53</span>
+                <h6>126.904</h6>
+                <h3>i</h3>iodine</td>
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">54</span>
+                <h6>131.249</h6>
+                <h3>xe</h3>xenon</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">55</span>
+                <h6>132.905</h6>
+                <h3>cs</h3>caesium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">56</span>
+                <h6>137.328</h6>
+                <h3>ba</h3>barium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">57</span>
+                <h6>138.905</h6>
+                <h3>la</h3>lanthanum</td>
+
+            <td>*</td>
+
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">72</span>
+                <h6>178.490</h6>
+                <h3>hf</h3>hafnium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">73</span>
+                <h6>180.948</h6>
+                <h3>ta</h3>tantalum</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">74</span>
+                <h6>183.840</h6>
+                <h3>w</h3>tungsten</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">75</span>
+                <h6>186.207</h6>
+                <h3>re</h3>rhenium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">76</span>
+                <h6>190.230</h6>
+                <h3>os</h3>osmium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">77</span>
+                <h6>192.217</h6>
+                <h3>ir</h3>iridium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">78</span>
+                <h6>195.085</h6>
+                <h3>pt</h3>platinum</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">79</span>
+                <h6>196.967</h6>
+                <h3>au</h3>gold</td>
+            <td class="transitionMetal liquid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">80</span>
+                <h6>200.592</h6>
+                <h3>hg</h3>mercury</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">81</span>
+                <h6>204.383</h6>
+                <h3>ti</h3>thallium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">82</span>
+                <h6>207.200</h6>
+                <h3>pb</h3>lead</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">83</span>
+                <h6>208.980</h6>
+                <h3>bi</h3>bismuth</td>
+            <td class="metalloid" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">84</span>
+                <h6>206.982</h6>
+                <h3>po</h3>polonium</td>
+            <td class="halogen" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">85</span>
+                <h6>209.987</h6>
+                <h3>at</h3>astatine</td>
+            <td class="nobleGas gas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">86</span>
+                <h6>222.018</h6>
+                <h3>rn</h3>radon</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td class="alkaliMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">87</span>
+                <h6>223.020</h6>
+                <h3>fr</h3>francium</td>
+            <td class="alkalineEarth" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">88</span>
+                <h6>226.025</h6>
+                <h3>re</h3>radium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">89</span>
+                <h6>227.028</h6>
+                <h3>ac</h3>actinium</td>
+
+            <td>**</td>
+
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">104</span>
+                <h6>[261]</h6>
+                <h3>rf</h3>rutherfordium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">105</span>
+                <h6>[262]</h6>
+                <h3>db</h3>dubnium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">106</span>
+                <h6>[266]</h6>
+                <h3>sg</h3>seaborgium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">107</span>
+                <h6>[264]</h6>
+                <h3>bh</h3>bohrium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">108</span>
+                <h6>[269]</h6>
+                <h3>hs</h3>hassium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">109</span>
+                <h6>[278]</h6>
+                <h3>mt</h3>meitnerium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">110</span>
+                <h6>[281]</h6>
+                <h3>ds</h3>darmstadium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">111</span>
+                <h6>[280]</h6>
+                <h3>rg</h3>roentgenium</td>
+            <td class="transitionMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">112</span>
+                <h6>[285]</h6>
+                <h3>cn</h3>copernicium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">113</span>
+                <h6>[286]</h6>
+                <h3>nh</h3>nihonium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">114</span>
+                <h6>[289]</h6>
+                <h3>fl</h3>flerovium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">115</span>
+                <h6>[289]</h6>
+                <h3>mc</h3>moscovium</td>
+            <td class="basicMetal" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">116</span>
+                <h6>[293]</h6>
+                <h3>lv</h3>livermorium</td>
+            <td class="halogen" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">117</span>
+                <h6>[294]</h6>
+                <h3>ts</h3>tennessine</td>
+            <td class="nobleGas" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">118</span>
+                <h6>[294]</h6>
+                <h3>og</h3>oganesson</td>
+        </tr>
+    </table>
+    <br>
+    <table class="periodicTable">
+        <tr>
+            <td colspan="3">*</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">58</span>
+                <h6>140.116</h6>
+                <h3>ce</h3>cerium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">59</span>
+                <h6>140.908</h6>
+                <h3>pr</h3>praseodymium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">60</span>
+                <h6>144.243</h6>
+                <h3>nd</h3>neodymium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">61</span>
+                <h6>144.913</h6>
+                <h3>pm</h3>promethium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">62</span>
+                <h6>150.360</h6>
+                <h3>sm</h3>samarium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">63</span>
+                <h6>151.964</h6>
+                <h3>eu</h3>europium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">64</span>
+                <h6>157.250</h6>
+                <h3>gd</h3>gadolinium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">65</span>
+                <h6>158.925</h6>
+                <h3>td</h3>terbium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">66</span>
+                <h6>162.500</h6>
+                <h3>dy</h3>dysprosium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">67</span>
+                <h6>164.930</h6>
+                <h3>ho</h3>holmium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">68</span>
+                <h6>167.259</h6>
+                <h3>er</h3>erbium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">69</span>
+                <h6>168.934</h6>
+                <h3>tm</h3>thulium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">70</span>
+                <h6>173.055</h6>
+                <h3>yb</h3>ytterbium</td>
+            <td class="lanthanide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">71</span>
+                <h6>174.967</h6>
+                <h3>lu</h3>lutetium</td>
+        </tr>
+        <tr>
+            <td colspan="3">**</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">90</span>
+                <h6>232.038</h6>
+                <h3>th</h3>thorium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">91</span>
+                <h6>231.036</h6>
+                <h3>pa</h3>protactinium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">92</span>
+                <h6>238.029</h6>
+                <h3>u</h3>uranium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">93</span>
+                <h6>237.048</h6>
+                <h3>np</h3>neptunium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">94</span>
+                <h6>244.064</h6>
+                <h3>pu</h3>plutonium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">95</span>
+                <h6>243.061</h6>
+                <h3>am</h3>americium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">96</span>
+                <h6>247.070</h6>
+                <h3>cm</h3>curium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">97</span>
+                <h6>247.070</h6>
+                <h3>bk</h3>berkelium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">98</span>
+                <h6>251.080</h6>
+                <h3>cf</h3>californium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">99</span>
+                <h6>[254]</h6>
+                <h3>es</h3>einsteinium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">100</span>
+                <h6>257.095</h6>
+                <h3>fm</h3>fermium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">101</span>
+                <h6>258.100</h6>
+                <h3>md</h3>mendelevium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">102</span>
+                <h6>259.101</h6>
+                <h3>no</h3>nobelium</td>
+            <td class="actinide" onclick="getElementById('java').innerHTML = 'Description'">
+                <span class="atomicNumber">103</span>
+                <h6>[282]</h6>
+                <h3>lr</h3>lawrencium</td>
+        </tr>
+    </table>
+    <br>
+    <table class="periodicTypes">
+        <tr>
+            <th class="alkaliMetal">alkali metal</th>
+            <th class="alkalineEarth">alkaline earth</th>
+            <th class="transitionMetal">transition metal</th>
+            <th class="basicMetal">basic metal</th>
+            <th class="metalloid">metalloid</th>
+            <th class="nonmetal">nonmetal</th>
+            <th class="halogen">halogen</th>
+            <th class="nobleGas">noble gas</th>
+            <th class="lanthanide">lanthanide</th>
+            <th class="actinide">actinide</th>
+        </tr>
+    </table>
+
+    <div class="javaprac">
+        <div class="ex">
+            <div class="example">
+                <span class="atomicNumberEx">Atomic #</span>
+                <h6 class="atomicMassEx">Atomic Mass</h6>
+                <h3>Element Symbol</h3>Element name</td>
+            </div>
+            <div class="SLG">
+                <span>Solid</span>
+                <span style="color: rgb(3, 174, 174);">Liquid</span>
+                <span style="color: aliceblue; -webkit-text-stroke: 1px black;">Gas</span>
+            </div>
+        
+        </div>
+        <div id="java">
+            Click on an element to display it's description!
+        </div>
+    </div>
+
+</body>
+</html>
